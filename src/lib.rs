@@ -76,8 +76,7 @@
 extern crate test;
 
 /// A minimal floating value used as a lower bound.
-/// TODO: replace by/add ULPS/relative float comparison methods.
-pub const EPSILON: f32 = 0.00001;
+pub const EPSILON: f32 = f32::EPSILON;
 
 /// Point math type used by this crate. Type alias for [`glam::Vec3`].
 pub type Point3 = glam::Vec3;
