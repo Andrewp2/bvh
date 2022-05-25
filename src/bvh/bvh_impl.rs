@@ -349,8 +349,6 @@ impl BVHNode {
         };
 
         // Construct the actual data structure and replace the dummy node.
-        //assert!(!child_l_aabb.is_empty());
-        //assert!(!child_r_aabb.is_empty());
         nodes[node_index] = BVHNode::Node {
             parent_index,
             depth,
